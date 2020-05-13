@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.example.scandemo.ScannerView
+        android:id="@+id/scan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:scan_height="280dp"
+        app:tip_margin_top="44dp"
+        app:tip_text="@string/scanner_view_tip_text"
+        app:tip_text_color="#ffffff"
+        app:tip_text_size="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_scan_cancel"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/btn_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="扫一扫"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
